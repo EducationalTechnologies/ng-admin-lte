@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Credentials } from './modules/ng-admin-lte/model/credentials';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  test( arg: Credentials) {
+    console.log("credentials invoked", arg.password);
+  }
 }

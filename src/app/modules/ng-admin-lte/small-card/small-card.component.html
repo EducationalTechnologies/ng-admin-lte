@@ -1,0 +1,13 @@
+<div [ngClass]="styleObject">
+  <div class="inner">
+    <b>iets {{marcus}} </b>
+    <button (click)="setMarcus()">click me</button>
+    <ng-content></ng-content>
+  </div>
+  <div class="icon">
+    <i  [ngClass]="iconObject"></i>
+  </div>
+  <a *ngIf="showBottomLink" [routerLink]="[router]" class="small-box-footer">
+    {{bottomLinkText}} <i class="fa fa-arrow-circle-right"></i>
+  </a>
+</div>

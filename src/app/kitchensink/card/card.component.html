@@ -1,0 +1,13 @@
+<lte-content-header title="Card Examples" [breadcrumb]="false">
+
+  </lte-content-header>
+<lte-content-row>
+    <div class="col-lg-6">
+      <lte-card title="Projects" [options]="cardOptionsCloseMe">
+      </lte-card>
+    </div>
+    <div class="col-lg-6">
+        <lte-card title="Projects" [options]="cardOptionsNewProject" (btnClick)="clickHeaderButton($event)">
+        </lte-card>
+      </div>
+</lte-content-row>
