@@ -1,2 +1,2 @@
-export * from './src/app/modules/header/header.module'
+export * from './src/app/modules/ng-admin-lte/ng-admin-lte.module'
 
