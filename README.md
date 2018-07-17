@@ -8,7 +8,7 @@ In the "package.json", the "peerDependencies" entry has to be renamed to "depend
 Afterwards, run the commands
 
 ### `npm install`
-### `npm run packags`
+### `npm run packagr`
 ### `npm run postpackage`
 
 
