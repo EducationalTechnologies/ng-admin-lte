@@ -5,22 +5,20 @@
       <a href="index3.html" class="nav-link">Home</a>
     </li>
     <li class="nav-item d-none d-sm-inline-block">
-      <a href="#" class="nav-link">Contact</a>
+      <a href="#" class="nav-link active">Contact</a>
     </li>
 
   </lte-header>
   <lte-main-sidebar logo="assets/AdminLTELogo.png" brand="Welten Things" link="http://trula.eu">
-    <li lte-menu-item [hasChildren]="true" title="ARLearn">
+    <li lte-menu-item routerLinkActive='activeLink' [hasChildren]="true" title="ARLearn">
       <ul class="nav nav-treeview">
         <li lte-menu-item [hasChildren]="false" title="arlearn" router="/arlearn"></li>
       </ul>
-
-
     </li>
-    <li lte-menu-item [hasChildren]="false" title="Card" router="/card"></li>
-    <li lte-menu-item [hasChildren]="false" title="Table" router="/table"></li>
+    <li lte-menu-item routerLinkActive='activeLink' [hasChildren]="false" title="Card" router="/card"></li>
+    <li lte-menu-item routerLinkActive='activeLink' [hasChildren]="false" title="Table" router="/table"></li>
   </lte-main-sidebar>
   <div class="content-wrapper">
-    
+
     <router-outlet></router-outlet>
   </div>
